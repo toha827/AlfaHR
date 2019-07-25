@@ -21,10 +21,9 @@
 		E365145722E7081C00C0C10D /* SectionBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145622E7081C00C0C10D /* SectionBottomCell.swift */; };
 		E365145922E7A52200C0C10D /* VacancyInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145822E7A52200C0C10D /* VacancyInfoController.swift */; };
 		E365145B22E7AA9D00C0C10D /* VacancyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */; };
-		E372669F22E8F98E000A303A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372669E22E8F98E000A303A /* LaunchViewController.swift */; };
 		E37266A122E9963A000A303A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E37266A022E9963A000A303A /* GoogleService-Info.plist */; };
 		E38EAD2722DE553000668DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD2622DE553000668DD5 /* AppDelegate.swift */; };
-		E38EAD2922DE553000668DD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD2822DE553000668DD5 /* ViewController.swift */; };
+		E38EAD2922DE553000668DD5 /* LoginVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD2822DE553000668DD5 /* LoginVIewController.swift */; };
 		E38EAD2C22DE553000668DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2A22DE553000668DD5 /* Main.storyboard */; };
 		E38EAD2E22DE553100668DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2D22DE553100668DD5 /* Assets.xcassets */; };
 		E38EAD3122DE553100668DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */; };
@@ -78,12 +77,11 @@
 		E365145622E7081C00C0C10D /* SectionBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBottomCell.swift; sourceTree = "<group>"; };
 		E365145822E7A52200C0C10D /* VacancyInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoController.swift; sourceTree = "<group>"; };
 		E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfo.swift; sourceTree = "<group>"; };
-		E372669E22E8F98E000A303A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		E37266A022E9963A000A303A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E37266A222E9963D000A303A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E38EAD2322DE553000668DD5 /* AlfaOnePositiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaOnePositiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38EAD2622DE553000668DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E38EAD2822DE553000668DD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E38EAD2822DE553000668DD5 /* LoginVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVIewController.swift; sourceTree = "<group>"; };
 		E38EAD2B22DE553000668DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E38EAD2D22DE553100668DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E38EAD3022DE553100668DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,6 +162,65 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		E37266A522E9F8F5000A303A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E37266A722E9F95E000A303A /* TabBar */,
+				E37266A822E9F9F2000A303A /* Auth */,
+				E365145822E7A52200C0C10D /* VacancyInfoController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E37266A722E9F95E000A303A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E3064CAB22E1EF53002F19CE /* MainTabBarController.swift */,
+				E3064CAD22E276EF002F19CE /* VacancyViewController.swift */,
+				E3162A4322E37F61004418CB /* CVsViewController.swift */,
+				E3162A4522E380A2004418CB /* ForInterviewViewController.swift */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		E37266A822E9F9F2000A303A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD6022DF505800668DD5 /* RegistrationViewController.swift */,
+				E38EAD2822DE553000668DD5 /* LoginVIewController.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		E37266A922E9FA1B000A303A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD5A22DF45E300668DD5 /* RegistrationView.swift */,
+				E38EAD5622DF279300668DD5 /* LoginView.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E37266AA22E9FDD6000A303A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */,
+				E365145322E7077200C0C10D /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E37266AB22E9FDF2000A303A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD2D22DE553100668DD5 /* Assets.xcassets */,
+				E37266A222E9963D000A303A /* GoogleService-Info.plist */,
+				E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */,
+				E38EAD3222DE553100668DD5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E38EAD1A22DE553000668DD5 = {
 			isa = PBXGroup;
 			children = (
@@ -190,23 +247,13 @@
 		E38EAD2522DE553000668DD5 /* AlfaOnePositiv */ = {
 			isa = PBXGroup;
 			children = (
-				E365145322E7077200C0C10D /* Cells */,
-				E3D34A6F22E0E3A600FE0A3C /* Registration */,
-				E3D34A6E22E0E38B00FE0A3C /* Login */,
-				E38EAD5F22DF464900668DD5 /* Extentions */,
 				E38EAD2622DE553000668DD5 /* AppDelegate.swift */,
 				E38EAD2A22DE553000668DD5 /* Main.storyboard */,
-				E38EAD2D22DE553100668DD5 /* Assets.xcassets */,
-				E37266A222E9963D000A303A /* GoogleService-Info.plist */,
-				E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */,
-				E38EAD3222DE553100668DD5 /* Info.plist */,
-				E3064CAB22E1EF53002F19CE /* MainTabBarController.swift */,
-				E3064CAD22E276EF002F19CE /* VacancyViewController.swift */,
-				E3162A4322E37F61004418CB /* CVsViewController.swift */,
-				E3162A4522E380A2004418CB /* ForInterviewViewController.swift */,
-				E365145822E7A52200C0C10D /* VacancyInfoController.swift */,
-				E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */,
-				E372669E22E8F98E000A303A /* LaunchViewController.swift */,
+				E37266AA22E9FDD6000A303A /* Views */,
+				E37266A922E9FA1B000A303A /* Model */,
+				E37266A522E9F8F5000A303A /* Controllers */,
+				E38EAD5F22DF464900668DD5 /* Extentions */,
+				E37266AB22E9FDF2000A303A /* Supporting Files */,
 			);
 			path = AlfaOnePositiv;
 			sourceTree = "<group>";
@@ -242,24 +289,6 @@
 				E3162A4D22E4C838004418CB /* CALayer+extension.swift */,
 			);
 			name = Extentions;
-			sourceTree = "<group>";
-		};
-		E3D34A6E22E0E38B00FE0A3C /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				E38EAD2822DE553000668DD5 /* ViewController.swift */,
-				E38EAD5622DF279300668DD5 /* LoginView.swift */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		E3D34A6F22E0E3A600FE0A3C /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				E38EAD5A22DF45E300668DD5 /* RegistrationView.swift */,
-				E38EAD6022DF505800668DD5 /* RegistrationViewController.swift */,
-			);
-			name = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,13 +526,12 @@
 				E38EAD6722DFB2C000668DD5 /* UIColor+Extention.swift in Sources */,
 				E3064CAE22E276F0002F19CE /* VacancyViewController.swift in Sources */,
 				E365145722E7081C00C0C10D /* SectionBottomCell.swift in Sources */,
-				E38EAD2922DE553000668DD5 /* ViewController.swift in Sources */,
+				E38EAD2922DE553000668DD5 /* LoginVIewController.swift in Sources */,
 				E38EAD2722DE553000668DD5 /* AppDelegate.swift in Sources */,
 				E3162A4E22E4C838004418CB /* CALayer+extension.swift in Sources */,
 				E3162A4622E380A2004418CB /* ForInterviewViewController.swift in Sources */,
 				E38EAD5922DF2BC100668DD5 /* Extensions.swift in Sources */,
 				E38EAD6522DFB27700668DD5 /* UIButton+Extention.swift in Sources */,
-				E372669F22E8F98E000A303A /* LaunchViewController.swift in Sources */,
 				E365145B22E7AA9D00C0C10D /* VacancyInfo.swift in Sources */,
 				E38EAD5B22DF45E300668DD5 /* RegistrationView.swift in Sources */,
 			);

@@ -27,12 +27,13 @@ class LoginView : UIView{
         
         let shadowView = ShadowView()
         addSubview(signInLbl)
+        
+        addSubview(loginButton)
         loginView.addSubview(stackView)
         
         addSubview(shadowView)
         addSubview(loginView)
         addSubview(logoImage)
-        addSubview(loginButton)
         
         
         signInLbl.setAnchor(top: nil, left: loginView.leftAnchor, bottom: loginView.topAnchor, right: nil, paddingTop:100, paddingLeft: 0, paddingBottom: -70, paddingRight: 0)
@@ -50,7 +51,6 @@ class LoginView : UIView{
         stackView.setAnchor(top: loginView.topAnchor, left: loginView.leftAnchor, bottom: nil, right: loginView.rightAnchor, paddingTop: 40, paddingLeft: 32, paddingBottom: -40, paddingRight: -32,width: loginView.frame.width - 40, height: loginView.frame.height)
         stackView.distribution = .fillEqually
         
-        loginButton.centerXAnchor.constraint(equalTo: loginView.centerXAnchor)
     }
     let loginView : UIView = {
         let view  = UIView()
