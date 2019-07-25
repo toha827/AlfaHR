@@ -15,14 +15,7 @@ extension UIView {
         stackView.spacing = 10
         return stackView
     }
-    func createLogoImage(image: UIImage?,
-                          size: CGFloat) -> UIImageView{
-        let imageView = UIImageView(image: image)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.widthAnchor.constraint(equalToConstant: size).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: size).isActive = true
-        return imageView
-    }
+    
 }
 extension UIViewController{
     func createLogoImage(image: UIImage?,
