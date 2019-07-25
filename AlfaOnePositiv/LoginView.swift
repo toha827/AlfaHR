@@ -19,44 +19,58 @@ class LoginView : UIView{
     }
     
     func setup(){
-        let stackView = createStackView(views: [signInLbl,
+        let stackView = createStackView(views: [
                                                 emailLbl,
                                                 emailTextField,
                                                 passwordLbl,
                                                 passwordTextField])
         
         let shadowView = ShadowView()
+        addSubview(signInLbl)
         loginView.addSubview(stackView)
         
-        addSubview(loginView)
         addSubview(shadowView)
-        
-        shadowView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
-        shadowView.centerYAnchor.constraint(equalTo: self.centerYAnchor)
-        
-        shadowView.setAnchor(width: self.loginView.frame.width+20, height: self.loginView.frame.height+20)
+        addSubview(loginView)
+        addSubview(logoImage)
+        addSubview(loginButton)
         
         
-        loginView.setAnchor(top: shadowView.topAnchor, left: shadowView.leftAnchor, bottom: shadowView.bottomAnchor, right: shadowView.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
+        signInLbl.setAnchor(top: nil, left: loginView.leftAnchor, bottom: loginView.topAnchor, right: nil, paddingTop:100, paddingLeft: 0, paddingBottom: -70, paddingRight: 0)
+        shadowView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        shadowView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         
+        shadowView.setAnchor(width: self.frame.width - 60, height: self.frame.height/2.5)
+        loginView.setAnchor(width: self.frame.width - 60, height: self.frame.height/2.5)
+        loginView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        loginView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         
+        logoImage.setAnchor(width: 60, height: 60)
+        
+        logoImage.setAnchor(top: nil, left: nil, bottom: loginView.topAnchor, right: loginView.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 20, paddingRight: -30)
+        stackView.setAnchor(top: loginView.topAnchor, left: loginView.leftAnchor, bottom: nil, right: loginView.rightAnchor, paddingTop: 40, paddingLeft: 32, paddingBottom: -40, paddingRight: -32,width: loginView.frame.width - 40, height: loginView.frame.height)
         stackView.distribution = .fillEqually
-        stackView.setAnchor(width: self.frame.width - 60, height: frame.height/4)
-        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        
+        loginButton.centerXAnchor.constraint(equalTo: loginView.centerXAnchor)
     }
     let loginView : UIView = {
         let view  = UIView()
+        view.backgroundColor = .white
+        
+        view.layer.cornerRadius = 10
+        view.layer.masksToBounds = true
         return view
     }()
     let signInLbl : UILabel = {
         let lbl = UILabel()
         lbl.text = "Sign In"
+        lbl.font = UIFont (name: "Helvetica", size: 30)
         return lbl
     }()
     let emailLbl : UILabel = {
         let lbl = UILabel()
         lbl.text = "Email"
+        
+        lbl.font = UIFont (name: "Helvetica", size: 17)
         return lbl
     }()
     let emailTextField : UITextField = {
@@ -66,10 +80,13 @@ class LoginView : UIView{
     let passwordLbl : UILabel = {
         let lbl = UILabel()
         lbl.text = "Password"
+        
+        lbl.font = UIFont (name: "Helvetica", size: 17)
         return lbl
     }()
     let passwordTextField : UITextField = {
         let tf = UITextField(placeHolder: "Password")
+        
         return tf
     }()
     
@@ -79,14 +96,9 @@ class LoginView : UIView{
         return btn
     }()
     
-    let signUpButton : UIButton = {
-        let btn = UIButton(title: "Sign Up", borderColor: UIColor.redColor)
-        btn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-        return btn
-    }()
-    let logoImage : UIImage = {
-        let img = UIImage()
-        
+    let logoImage : UIImageView = {
+        let img = UIImageView()
+        img.image = UIImage(named: "LogoMini")
         return img
     }()
     @objc func handleLogin (){
