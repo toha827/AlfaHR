@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2799A7734DDA4F99B867A870 /* Pods_AlfaOnePositivUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B48A12EBABB383D61A37690 /* Pods_AlfaOnePositivUITests.framework */; };
+		9BC285EFDCD525A64D5CCF36 /* Pods_AlfaOnePositiv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA2A71EDCC4AF48B7ED2DEE /* Pods_AlfaOnePositiv.framework */; };
+		AD69B3A594D5BDD975598E7B /* Pods_AlfaOnePositivTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C950602066468077C60D6D40 /* Pods_AlfaOnePositivTests.framework */; };
+		E3064CAC22E1EF53002F19CE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3064CAB22E1EF53002F19CE /* MainTabBarController.swift */; };
+		E3064CAE22E276F0002F19CE /* VacancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3064CAD22E276EF002F19CE /* VacancyViewController.swift */; };
+		E3162A4422E37F61004418CB /* CVsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3162A4322E37F61004418CB /* CVsViewController.swift */; };
+		E3162A4622E380A2004418CB /* ForInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3162A4522E380A2004418CB /* ForInterviewViewController.swift */; };
+		E3162A4A22E38743004418CB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3162A4922E38743004418CB /* UIImage+Extension.swift */; };
+		E3162A4C22E3A12A004418CB /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3162A4B22E3A12A004418CB /* UITabBarController+Extension.swift */; };
+		E3162A4E22E4C838004418CB /* CALayer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3162A4D22E4C838004418CB /* CALayer+extension.swift */; };
+		E365145522E7079100C0C10D /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145422E7079100C0C10D /* SectionCell.swift */; };
+		E365145722E7081C00C0C10D /* SectionBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145622E7081C00C0C10D /* SectionBottomCell.swift */; };
+		E365145922E7A52200C0C10D /* VacancyInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145822E7A52200C0C10D /* VacancyInfoController.swift */; };
+		E365145B22E7AA9D00C0C10D /* VacancyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */; };
+		E372669F22E8F98E000A303A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372669E22E8F98E000A303A /* LaunchViewController.swift */; };
+		E37266A122E9963A000A303A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E37266A022E9963A000A303A /* GoogleService-Info.plist */; };
+		E38EAD2722DE553000668DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD2622DE553000668DD5 /* AppDelegate.swift */; };
+		E38EAD2922DE553000668DD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD2822DE553000668DD5 /* ViewController.swift */; };
+		E38EAD2C22DE553000668DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2A22DE553000668DD5 /* Main.storyboard */; };
+		E38EAD2E22DE553100668DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2D22DE553100668DD5 /* Assets.xcassets */; };
+		E38EAD3122DE553100668DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */; };
+		E38EAD3C22DE553100668DD5 /* AlfaOnePositivTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD3B22DE553100668DD5 /* AlfaOnePositivTests.swift */; };
+		E38EAD4722DE553100668DD5 /* AlfaOnePositivUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD4622DE553100668DD5 /* AlfaOnePositivUITests.swift */; };
+		E38EAD5722DF279300668DD5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD5622DF279300668DD5 /* LoginView.swift */; };
+		E38EAD5922DF2BC100668DD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD5822DF2BC100668DD5 /* Extensions.swift */; };
+		E38EAD5B22DF45E300668DD5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD5A22DF45E300668DD5 /* RegistrationView.swift */; };
+		E38EAD6122DF505800668DD5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD6022DF505800668DD5 /* RegistrationViewController.swift */; };
+		E38EAD6322DFB00500668DD5 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD6222DFB00500668DD5 /* UITextField+Extention.swift */; };
+		E38EAD6522DFB27700668DD5 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD6422DFB27700668DD5 /* UIButton+Extention.swift */; };
+		E38EAD6722DFB2C000668DD5 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD6622DFB2C000668DD5 /* UIColor+Extention.swift */; };
+		E38EAD6922DFB57300668DD5 /* UIStackView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38EAD6822DFB57300668DD5 /* UIStackView+Extention.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E38EAD3822DE553100668DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E38EAD1B22DE553000668DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E38EAD2222DE553000668DD5;
+			remoteInfo = AlfaOnePositiv;
+		};
+		E38EAD4322DE553100668DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E38EAD1B22DE553000668DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E38EAD2222DE553000668DD5;
+			remoteInfo = AlfaOnePositiv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C34A6C3A4035BBB150925F3 /* Pods-AlfaOnePositivUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositivUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositivUITests/Pods-AlfaOnePositivUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1704CDB4576F1CB647C89374 /* Pods-AlfaOnePositivTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositivTests.debug.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositivTests/Pods-AlfaOnePositivTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B48A12EBABB383D61A37690 /* Pods_AlfaOnePositivUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlfaOnePositivUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537F5687AE2253DC581AE5C7 /* Pods-AlfaOnePositivUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositivUITests.release.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositivUITests/Pods-AlfaOnePositivUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A656A1FB639315741D02BF9 /* Pods-AlfaOnePositiv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositiv.release.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositiv/Pods-AlfaOnePositiv.release.xcconfig"; sourceTree = "<group>"; };
+		8B7EF44D6444A7C73F1CF38F /* Pods-AlfaOnePositiv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositiv.debug.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositiv/Pods-AlfaOnePositiv.debug.xcconfig"; sourceTree = "<group>"; };
+		C0AAFE9AA3FA14BFEFDB9AE7 /* Pods-AlfaOnePositivTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaOnePositivTests.release.xcconfig"; path = "Target Support Files/Pods-AlfaOnePositivTests/Pods-AlfaOnePositivTests.release.xcconfig"; sourceTree = "<group>"; };
+		C950602066468077C60D6D40 /* Pods_AlfaOnePositivTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlfaOnePositivTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA2A71EDCC4AF48B7ED2DEE /* Pods_AlfaOnePositiv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlfaOnePositiv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3064CAB22E1EF53002F19CE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E3064CAD22E276EF002F19CE /* VacancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewController.swift; sourceTree = "<group>"; };
+		E3162A4322E37F61004418CB /* CVsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVsViewController.swift; sourceTree = "<group>"; };
+		E3162A4522E380A2004418CB /* ForInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForInterviewViewController.swift; sourceTree = "<group>"; };
+		E3162A4922E38743004418CB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		E3162A4B22E3A12A004418CB /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		E3162A4D22E4C838004418CB /* CALayer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+extension.swift"; sourceTree = "<group>"; };
+		E365145422E7079100C0C10D /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		E365145622E7081C00C0C10D /* SectionBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBottomCell.swift; sourceTree = "<group>"; };
+		E365145822E7A52200C0C10D /* VacancyInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoController.swift; sourceTree = "<group>"; };
+		E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfo.swift; sourceTree = "<group>"; };
+		E372669E22E8F98E000A303A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		E37266A022E9963A000A303A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E37266A222E9963D000A303A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E38EAD2322DE553000668DD5 /* AlfaOnePositiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaOnePositiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38EAD2622DE553000668DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E38EAD2822DE553000668DD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E38EAD2B22DE553000668DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E38EAD2D22DE553100668DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E38EAD3022DE553100668DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E38EAD3222DE553100668DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38EAD3722DE553100668DD5 /* AlfaOnePositivTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfaOnePositivTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38EAD3B22DE553100668DD5 /* AlfaOnePositivTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfaOnePositivTests.swift; sourceTree = "<group>"; };
+		E38EAD3D22DE553100668DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38EAD4222DE553100668DD5 /* AlfaOnePositivUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfaOnePositivUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38EAD4622DE553100668DD5 /* AlfaOnePositivUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfaOnePositivUITests.swift; sourceTree = "<group>"; };
+		E38EAD4822DE553100668DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38EAD5622DF279300668DD5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E38EAD5822DF2BC100668DD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E38EAD5A22DF45E300668DD5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E38EAD6022DF505800668DD5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E38EAD6222DFB00500668DD5 /* UITextField+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		E38EAD6422DFB27700668DD5 /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		E38EAD6622DFB2C000668DD5 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		E38EAD6822DFB57300668DD5 /* UIStackView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extention.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E38EAD2022DE553000668DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC285EFDCD525A64D5CCF36 /* Pods_AlfaOnePositiv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD3422DE553100668DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD69B3A594D5BDD975598E7B /* Pods_AlfaOnePositivTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD3F22DE553100668DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2799A7734DDA4F99B867A870 /* Pods_AlfaOnePositivUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA07B8C148A5099BFD99844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA2A71EDCC4AF48B7ED2DEE /* Pods_AlfaOnePositiv.framework */,
+				C950602066468077C60D6D40 /* Pods_AlfaOnePositivTests.framework */,
+				3B48A12EBABB383D61A37690 /* Pods_AlfaOnePositivUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F0E7FEE069CD27A3988111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B7EF44D6444A7C73F1CF38F /* Pods-AlfaOnePositiv.debug.xcconfig */,
+				8A656A1FB639315741D02BF9 /* Pods-AlfaOnePositiv.release.xcconfig */,
+				1704CDB4576F1CB647C89374 /* Pods-AlfaOnePositivTests.debug.xcconfig */,
+				C0AAFE9AA3FA14BFEFDB9AE7 /* Pods-AlfaOnePositivTests.release.xcconfig */,
+				0C34A6C3A4035BBB150925F3 /* Pods-AlfaOnePositivUITests.debug.xcconfig */,
+				537F5687AE2253DC581AE5C7 /* Pods-AlfaOnePositivUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E365145322E7077200C0C10D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E365145422E7079100C0C10D /* SectionCell.swift */,
+				E365145622E7081C00C0C10D /* SectionBottomCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E38EAD1A22DE553000668DD5 = {
+			isa = PBXGroup;
+			children = (
+				E37266A022E9963A000A303A /* GoogleService-Info.plist */,
+				E38EAD2522DE553000668DD5 /* AlfaOnePositiv */,
+				E38EAD3A22DE553100668DD5 /* AlfaOnePositivTests */,
+				E38EAD4522DE553100668DD5 /* AlfaOnePositivUITests */,
+				E38EAD2422DE553000668DD5 /* Products */,
+				D4F0E7FEE069CD27A3988111 /* Pods */,
+				0FA07B8C148A5099BFD99844 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E38EAD2422DE553000668DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD2322DE553000668DD5 /* AlfaOnePositiv.app */,
+				E38EAD3722DE553100668DD5 /* AlfaOnePositivTests.xctest */,
+				E38EAD4222DE553100668DD5 /* AlfaOnePositivUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E38EAD2522DE553000668DD5 /* AlfaOnePositiv */ = {
+			isa = PBXGroup;
+			children = (
+				E365145322E7077200C0C10D /* Cells */,
+				E3D34A6F22E0E3A600FE0A3C /* Registration */,
+				E3D34A6E22E0E38B00FE0A3C /* Login */,
+				E38EAD5F22DF464900668DD5 /* Extentions */,
+				E38EAD2622DE553000668DD5 /* AppDelegate.swift */,
+				E38EAD2A22DE553000668DD5 /* Main.storyboard */,
+				E38EAD2D22DE553100668DD5 /* Assets.xcassets */,
+				E37266A222E9963D000A303A /* GoogleService-Info.plist */,
+				E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */,
+				E38EAD3222DE553100668DD5 /* Info.plist */,
+				E3064CAB22E1EF53002F19CE /* MainTabBarController.swift */,
+				E3064CAD22E276EF002F19CE /* VacancyViewController.swift */,
+				E3162A4322E37F61004418CB /* CVsViewController.swift */,
+				E3162A4522E380A2004418CB /* ForInterviewViewController.swift */,
+				E365145822E7A52200C0C10D /* VacancyInfoController.swift */,
+				E365145A22E7AA9D00C0C10D /* VacancyInfo.swift */,
+				E372669E22E8F98E000A303A /* LaunchViewController.swift */,
+			);
+			path = AlfaOnePositiv;
+			sourceTree = "<group>";
+		};
+		E38EAD3A22DE553100668DD5 /* AlfaOnePositivTests */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD3B22DE553100668DD5 /* AlfaOnePositivTests.swift */,
+				E38EAD3D22DE553100668DD5 /* Info.plist */,
+			);
+			path = AlfaOnePositivTests;
+			sourceTree = "<group>";
+		};
+		E38EAD4522DE553100668DD5 /* AlfaOnePositivUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD4622DE553100668DD5 /* AlfaOnePositivUITests.swift */,
+				E38EAD4822DE553100668DD5 /* Info.plist */,
+			);
+			path = AlfaOnePositivUITests;
+			sourceTree = "<group>";
+		};
+		E38EAD5F22DF464900668DD5 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD5822DF2BC100668DD5 /* Extensions.swift */,
+				E38EAD6222DFB00500668DD5 /* UITextField+Extention.swift */,
+				E38EAD6422DFB27700668DD5 /* UIButton+Extention.swift */,
+				E38EAD6622DFB2C000668DD5 /* UIColor+Extention.swift */,
+				E38EAD6822DFB57300668DD5 /* UIStackView+Extention.swift */,
+				E3162A4922E38743004418CB /* UIImage+Extension.swift */,
+				E3162A4B22E3A12A004418CB /* UITabBarController+Extension.swift */,
+				E3162A4D22E4C838004418CB /* CALayer+extension.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		E3D34A6E22E0E38B00FE0A3C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD2822DE553000668DD5 /* ViewController.swift */,
+				E38EAD5622DF279300668DD5 /* LoginView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E3D34A6F22E0E3A600FE0A3C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E38EAD5A22DF45E300668DD5 /* RegistrationView.swift */,
+				E38EAD6022DF505800668DD5 /* RegistrationViewController.swift */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E38EAD2222DE553000668DD5 /* AlfaOnePositiv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38EAD4B22DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositiv" */;
+			buildPhases = (
+				14C5DD711DD9A6A4F6705AFF /* [CP] Check Pods Manifest.lock */,
+				E38EAD1F22DE553000668DD5 /* Sources */,
+				E38EAD2022DE553000668DD5 /* Frameworks */,
+				E38EAD2122DE553000668DD5 /* Resources */,
+				62C976E8DF1272812BE6273D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlfaOnePositiv;
+			productName = AlfaOnePositiv;
+			productReference = E38EAD2322DE553000668DD5 /* AlfaOnePositiv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E38EAD3622DE553100668DD5 /* AlfaOnePositivTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38EAD4E22DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositivTests" */;
+			buildPhases = (
+				28448FE97946F0C8793EEC32 /* [CP] Check Pods Manifest.lock */,
+				E38EAD3322DE553100668DD5 /* Sources */,
+				E38EAD3422DE553100668DD5 /* Frameworks */,
+				E38EAD3522DE553100668DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E38EAD3922DE553100668DD5 /* PBXTargetDependency */,
+			);
+			name = AlfaOnePositivTests;
+			productName = AlfaOnePositivTests;
+			productReference = E38EAD3722DE553100668DD5 /* AlfaOnePositivTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E38EAD4122DE553100668DD5 /* AlfaOnePositivUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38EAD5122DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositivUITests" */;
+			buildPhases = (
+				805F5683CB5F34E09C2DF9C8 /* [CP] Check Pods Manifest.lock */,
+				E38EAD3E22DE553100668DD5 /* Sources */,
+				E38EAD3F22DE553100668DD5 /* Frameworks */,
+				E38EAD4022DE553100668DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E38EAD4422DE553100668DD5 /* PBXTargetDependency */,
+			);
+			name = AlfaOnePositivUITests;
+			productName = AlfaOnePositivUITests;
+			productReference = E38EAD4222DE553100668DD5 /* AlfaOnePositivUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E38EAD1B22DE553000668DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Aktilek;
+				TargetAttributes = {
+					E38EAD2222DE553000668DD5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E38EAD3622DE553100668DD5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E38EAD2222DE553000668DD5;
+					};
+					E38EAD4122DE553100668DD5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E38EAD2222DE553000668DD5;
+					};
+				};
+			};
+			buildConfigurationList = E38EAD1E22DE553000668DD5 /* Build configuration list for PBXProject "AlfaOnePositiv" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E38EAD1A22DE553000668DD5;
+			productRefGroup = E38EAD2422DE553000668DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E38EAD2222DE553000668DD5 /* AlfaOnePositiv */,
+				E38EAD3622DE553100668DD5 /* AlfaOnePositivTests */,
+				E38EAD4122DE553100668DD5 /* AlfaOnePositivUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E38EAD2122DE553000668DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38EAD3122DE553100668DD5 /* LaunchScreen.storyboard in Resources */,
+				E37266A122E9963A000A303A /* GoogleService-Info.plist in Resources */,
+				E38EAD2E22DE553100668DD5 /* Assets.xcassets in Resources */,
+				E38EAD2C22DE553000668DD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD3522DE553100668DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD4022DE553100668DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C5DD711DD9A6A4F6705AFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlfaOnePositiv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28448FE97946F0C8793EEC32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlfaOnePositivTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C976E8DF1272812BE6273D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlfaOnePositiv/Pods-AlfaOnePositiv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlfaOnePositiv/Pods-AlfaOnePositiv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlfaOnePositiv/Pods-AlfaOnePositiv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805F5683CB5F34E09C2DF9C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlfaOnePositivUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E38EAD1F22DE553000668DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3162A4C22E3A12A004418CB /* UITabBarController+Extension.swift in Sources */,
+				E38EAD6922DFB57300668DD5 /* UIStackView+Extention.swift in Sources */,
+				E38EAD6122DF505800668DD5 /* RegistrationViewController.swift in Sources */,
+				E365145922E7A52200C0C10D /* VacancyInfoController.swift in Sources */,
+				E3162A4422E37F61004418CB /* CVsViewController.swift in Sources */,
+				E38EAD6322DFB00500668DD5 /* UITextField+Extention.swift in Sources */,
+				E365145522E7079100C0C10D /* SectionCell.swift in Sources */,
+				E38EAD5722DF279300668DD5 /* LoginView.swift in Sources */,
+				E3162A4A22E38743004418CB /* UIImage+Extension.swift in Sources */,
+				E3064CAC22E1EF53002F19CE /* MainTabBarController.swift in Sources */,
+				E38EAD6722DFB2C000668DD5 /* UIColor+Extention.swift in Sources */,
+				E3064CAE22E276F0002F19CE /* VacancyViewController.swift in Sources */,
+				E365145722E7081C00C0C10D /* SectionBottomCell.swift in Sources */,
+				E38EAD2922DE553000668DD5 /* ViewController.swift in Sources */,
+				E38EAD2722DE553000668DD5 /* AppDelegate.swift in Sources */,
+				E3162A4E22E4C838004418CB /* CALayer+extension.swift in Sources */,
+				E3162A4622E380A2004418CB /* ForInterviewViewController.swift in Sources */,
+				E38EAD5922DF2BC100668DD5 /* Extensions.swift in Sources */,
+				E38EAD6522DFB27700668DD5 /* UIButton+Extention.swift in Sources */,
+				E372669F22E8F98E000A303A /* LaunchViewController.swift in Sources */,
+				E365145B22E7AA9D00C0C10D /* VacancyInfo.swift in Sources */,
+				E38EAD5B22DF45E300668DD5 /* RegistrationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD3322DE553100668DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38EAD3C22DE553100668DD5 /* AlfaOnePositivTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38EAD3E22DE553100668DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38EAD4722DE553100668DD5 /* AlfaOnePositivUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E38EAD3922DE553100668DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E38EAD2222DE553000668DD5 /* AlfaOnePositiv */;
+			targetProxy = E38EAD3822DE553100668DD5 /* PBXContainerItemProxy */;
+		};
+		E38EAD4422DE553100668DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E38EAD2222DE553000668DD5 /* AlfaOnePositiv */;
+			targetProxy = E38EAD4322DE553100668DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E38EAD2A22DE553000668DD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38EAD2B22DE553000668DD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E38EAD2F22DE553100668DD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38EAD3022DE553100668DD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E38EAD4922DE553100668DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E38EAD4A22DE553100668DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E38EAD4C22DE553100668DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7EF44D6444A7C73F1CF38F /* Pods-AlfaOnePositiv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositiv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E38EAD4D22DE553100668DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A656A1FB639315741D02BF9 /* Pods-AlfaOnePositiv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositiv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E38EAD4F22DE553100668DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1704CDB4576F1CB647C89374 /* Pods-AlfaOnePositivTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositivTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositivTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaOnePositiv.app/AlfaOnePositiv";
+			};
+			name = Debug;
+		};
+		E38EAD5022DE553100668DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AAFE9AA3FA14BFEFDB9AE7 /* Pods-AlfaOnePositivTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositivTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositivTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaOnePositiv.app/AlfaOnePositiv";
+			};
+			name = Release;
+		};
+		E38EAD5222DE553100668DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C34A6C3A4035BBB150925F3 /* Pods-AlfaOnePositivUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositivUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositivUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlfaOnePositiv;
+			};
+			name = Debug;
+		};
+		E38EAD5322DE553100668DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537F5687AE2253DC581AE5C7 /* Pods-AlfaOnePositivUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlfaOnePositivUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = methodpro.AlfaOnePositivUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlfaOnePositiv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E38EAD1E22DE553000668DD5 /* Build configuration list for PBXProject "AlfaOnePositiv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38EAD4922DE553100668DD5 /* Debug */,
+				E38EAD4A22DE553100668DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38EAD4B22DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositiv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38EAD4C22DE553100668DD5 /* Debug */,
+				E38EAD4D22DE553100668DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38EAD4E22DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositivTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38EAD4F22DE553100668DD5 /* Debug */,
+				E38EAD5022DE553100668DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38EAD5122DE553100668DD5 /* Build configuration list for PBXNativeTarget "AlfaOnePositivUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E38EAD5222DE553100668DD5 /* Debug */,
+				E38EAD5322DE553100668DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E38EAD1B22DE553000668DD5 /* Project object */;
+}
