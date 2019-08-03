@@ -1,0 +1,6 @@
+framework module Pods_AlfaOnePositivTests {
+  umbrella header "Pods-AlfaOnePositivTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

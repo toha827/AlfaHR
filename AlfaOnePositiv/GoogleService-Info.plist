@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>108436708615-dt4bbrd0qvlv1c08t0irjj47uj1hqri9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.108436708615-dt4bbrd0qvlv1c08t0irjj47uj1hqri9</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>108436708615-qv491u2ubarfbrunjr17l2h9pm8i4j6g.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCfHzi1u7hgln7dWghMuz5sJfZ-1ps-R0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>108436708615</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>methodpro.AlfaOnePositiv</string>
+	<key>PROJECT_ID</key>
+	<string>alfa-3b364</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alfa-3b364.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:108436708615:ios:2161eefd5715fed2</string>
+	<key>DATABASE_URL</key>
+	<string>https://alfa-3b364.firebaseio.com</string>
+</dict>
+</plist>

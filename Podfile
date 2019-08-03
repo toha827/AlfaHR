@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AlfaOnePositiv' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AlfaOnePositiv
+
+  pod 'IQKeyboardManagerSwift'
+
+
+  target 'AlfaOnePositivTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AlfaOnePositivUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
